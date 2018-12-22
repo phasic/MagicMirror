@@ -45,23 +45,10 @@ var config = {
                 coloredSymbolOnly: true,
                 calendars: [
                     {
-                        url: 'ICLOUDWEBCALURL',
+                        url: 'WEBCALURL',
                         symbol: 'calendar',
                     },
                 ],
-            }
-        },
-        {
-            module: "MMM-GoogleShoppingList",
-            position: "top_left",
-            header: "My Shopping List",
-            config: {
-                creds: {
-                    email: "YOUR GOOGLE ACCOUNT",
-                    password: "YOUR GOOGLE PASSWORD",
-                },
-                scanInterval: 1000 * 60,
-                displayImage: false, //if you set, you can get image of items. but very ugly. I don't recommend.
             }
         },
         {
@@ -84,15 +71,13 @@ var config = {
             }
         },
         {
-            module: "MMM-Reddit",
-            position: "bottom_left",
+            module: 'MMM-Screencast',
+            position: 'bottom_left',
             config: {
-                displayType: 'image',
-                imageQuality: 'high',
-                count: 10,
-                show: 1,
-                showAll: true,
-            },
+                position: 'bottomRight',
+                height: 300,
+                width: 500,
+            }
         },
         {
             module: "MMM-NMBS-Connection",
